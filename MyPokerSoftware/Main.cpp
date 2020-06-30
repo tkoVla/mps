@@ -3,12 +3,18 @@
 #include <ctime>
 //#include "omp/EquityCalculator.h"
 //#include "omp/CardRange.h"
-#include "Deck.h"
+//#include "Deck.h"
 #include <fstream>
 #include <map>
 
 int main() {
 
+	std::cout << "Radi!\n";
+
+	return 0;
+}
+
+/*
 	int NN = 4826809;
 
 	srand(time(NULL));
@@ -71,3 +77,4 @@ int main() {
 
 	return 0;
 }
+*/

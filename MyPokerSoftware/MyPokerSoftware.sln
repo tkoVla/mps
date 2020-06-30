@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyPokerSoftware", "MyPokerSoftware.vcxproj", "{F17FF1C0-E3CF-4B2C-BA2B-241899F04343}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MPS2", "..\MPS2\MPS2.vcxproj", "{CF79AA2B-A9D1-4838-9688-FCC05963E17F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{F17FF1C0-E3CF-4B2C-BA2B-241899F04343}.Release|x64.Build.0 = Release|x64
 		{F17FF1C0-E3CF-4B2C-BA2B-241899F04343}.Release|x86.ActiveCfg = Release|Win32
 		{F17FF1C0-E3CF-4B2C-BA2B-241899F04343}.Release|x86.Build.0 = Release|Win32
+		{CF79AA2B-A9D1-4838-9688-FCC05963E17F}.Debug|x64.ActiveCfg = Debug|x64
+		{CF79AA2B-A9D1-4838-9688-FCC05963E17F}.Debug|x64.Build.0 = Debug|x64
+		{CF79AA2B-A9D1-4838-9688-FCC05963E17F}.Debug|x86.ActiveCfg = Debug|Win32
+		{CF79AA2B-A9D1-4838-9688-FCC05963E17F}.Debug|x86.Build.0 = Debug|Win32
+		{CF79AA2B-A9D1-4838-9688-FCC05963E17F}.Release|x64.ActiveCfg = Release|x64
+		{CF79AA2B-A9D1-4838-9688-FCC05963E17F}.Release|x64.Build.0 = Release|x64
+		{CF79AA2B-A9D1-4838-9688-FCC05963E17F}.Release|x86.ActiveCfg = Release|Win32
+		{CF79AA2B-A9D1-4838-9688-FCC05963E17F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
