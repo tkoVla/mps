@@ -65,5 +65,13 @@
     <ClInclude Include="omp\Util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Ranges.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Sorted_Ranges.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

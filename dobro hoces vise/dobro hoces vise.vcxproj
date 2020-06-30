@@ -157,6 +157,10 @@
     <ClInclude Include="omp\OffsetTable.hxx" />
     <ClInclude Include="omp\Random.h" />
     <ClInclude Include="omp\Util.h" />
+    <ClInclude Include="Ranges.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Sorted_Ranges.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

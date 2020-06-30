@@ -6,6 +6,7 @@
 #include <string>
 #include <thread>
 #include <chrono>
+#include <array>
 
 static int s = 0;
 
@@ -18,19 +19,32 @@ void _f() {
 int main() {
 
 	std::ifstream myFile;
-	myFile.open("Sorted_Ranges.txt");
-	std::ofstream izlaz;
+//	std::ofstream izlaz;
 //	izlaz.open("BBvsGB.txt"); izlaz.close();
 
 	std::vector<std::string> sRanges; sRanges.push_back("");
 	std::string s;
+	myFile.open("Sorted_Ranges.txt");
 	while (getline(myFile, s))
 		sRanges.push_back(s);
 	myFile.close();
-	std::vector<omp::CardRange> rranges;
+	std::cout << sRanges.size() << std::endl;
+	std::vector<omp::CardRange> rranges = { sRanges[5], sRanges[10] };
 	omp::EquityCalculator::Results rresults;
-	omp::EquityCalculator eq;
+	omp::EquityCalculator calc;
 	
+	std::cout << "Sva inicijalizacija radi!\n";
+
+	for (int i = 0; i < rranges[0].combinations().size(); i++)
+		std::cout << rranges[0].combinations()[i][0] << ' ' << rranges[0].combinations()[i][1] << std::endl;
+		
+	/*
+	calc.start(rranges);
+	rresults = calc.getResults();
+	for (double r : rresults.equity)
+		std::cout << r << ' ';
+	std::cout << std::endl;
+	*/
 	/*
 	std::cout << "Prije threadova!\n";
 
