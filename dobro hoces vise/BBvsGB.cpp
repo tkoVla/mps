@@ -54,7 +54,7 @@ int main() {
 
 	std::cout << std::this_thread::get_id() << std::endl;
 	*/
-	
+	/*
 	for(int i=0; i<=60; i+=5)
 		for (int j = 0; j <= 60; j += 5) {
 			rranges.clear(); rranges = { sRanges[i], sRanges[j] };
@@ -69,6 +69,7 @@ int main() {
 				std::cout << r << ' ';
 			std::cout << std::endl << std::endl;
 		}
+	*/
 		
 	return 0;
 }
