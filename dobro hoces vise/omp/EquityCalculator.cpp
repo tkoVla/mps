@@ -63,8 +63,6 @@ bool EquityCalculator::start(const std::vector<CardRange>& handRanges, uint64_t 
         });
     }
 
-    wait();
-
     // Started successfully.
     return true;
 }

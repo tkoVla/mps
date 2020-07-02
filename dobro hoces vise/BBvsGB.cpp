@@ -29,22 +29,18 @@ int main() {
 		sRanges.push_back(s);
 	myFile.close();
 	std::cout << sRanges.size() << std::endl;
-	std::vector<omp::CardRange> rranges = { sRanges[5], sRanges[10] };
+	std::vector<omp::CardRange> rranges = { sRanges[35], sRanges[55] };
 	omp::EquityCalculator::Results rresults;
 	omp::EquityCalculator calc;
 	
 	std::cout << "Sva inicijalizacija radi!\n";
-
-	for (int i = 0; i < rranges[0].combinations().size(); i++)
-		std::cout << rranges[0].combinations()[i][0] << ' ' << rranges[0].combinations()[i][1] << std::endl;
 		
-	/*
 	calc.start(rranges);
-	rresults = calc.getResults();
+	rresults = calc.getResults(); calc.wait();
 	for (double r : rresults.equity)
 		std::cout << r << ' ';
 	std::cout << std::endl;
-	*/
+
 	/*
 	std::cout << "Prije threadova!\n";
 
