@@ -29,14 +29,14 @@ int main() {
 		sRanges.push_back(s);
 	myFile.close();
 	std::cout << sRanges.size() << std::endl;
-	std::vector<omp::CardRange> rranges = { sRanges[35], sRanges[55] };
+	std::vector<omp::CardRange> rranges = { sRanges[5], sRanges[55] };
 	omp::EquityCalculator::Results rresults;
 	omp::EquityCalculator calc;
 	
 	std::cout << "Sva inicijalizacija radi!\n";
 		
-	calc.start(rranges);
-	rresults = calc.getResults(); calc.wait();
+	calc.start(rranges); calc.wait();
+	rresults = calc.getResults();
 	for (double r : rresults.equity)
 		std::cout << r << ' ';
 	std::cout << std::endl;
@@ -80,6 +80,6 @@ int main() {
 			std::cout << std::endl << std::endl;
 		}
 	*/
-		
+
 	return 0;
 }
